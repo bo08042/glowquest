@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { DIMENSIONS, QUESTIONS, scoreByDimension } from '../data/selfCheck'
 import { CHALLENGES } from '../data/challenges'
@@ -187,10 +187,20 @@ function Results({ answers, completedAt, onRestart }) {
 }
 
 export default function SelfCheck() {
-  // 進入頁面時載入上一次完成的紀錄；有紀錄就直接顯示結果
-  const [lastResult, setLastResult] = useState(selfCheckService.getLastResult)
+  // 進入頁面時載入上一次完成的紀錄；有紀錄就直接顯示結果。
+  // 在 mount 後才讀取 — 頁面經過預渲染（SSG），
+  // 伺服端沒有 localStorage，hydrate 時兩端初始畫面必須一致。
+  const [lastResult, setLastResult] = useState(null)
   const [answers, setAnswers] = useState({})
-  const [submitted, setSubmitted] = useState(() => lastResult !== null)
+  const [submitted, setSubmitted] = useState(false)
+
+  useEffect(() => {
+    const saved = selfCheckService.getLastResult()
+    if (saved) {
+      setLastResult(saved)
+      setSubmitted(true)
+    }
+  }, [])
 
   // 重新作答：清空表單但保留舊紀錄，完成送出時才覆蓋
   const restart = () => {

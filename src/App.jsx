@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import { Routes, Route, NavLink } from 'react-router-dom'
 import ScrollToTop from './components/ScrollToTop'
+import PageMeta from './components/PageMeta'
+import NotFound from './pages/NotFound'
 import Home from './pages/Home'
 import Knowledge from './pages/Knowledge'
 import Article from './pages/Article'
@@ -42,6 +44,7 @@ export default function App() {
   return (
     <div className="flex min-h-screen flex-col bg-stone-50 text-stone-800">
       <ScrollToTop />
+      <PageMeta />
       <header className="sticky top-0 z-10 border-b border-stone-200 bg-white/90 backdrop-blur">
         <div className="mx-auto flex max-w-4xl items-center justify-between px-4 py-3">
           <NavLink
@@ -109,6 +112,7 @@ export default function App() {
           <Route path="/daily-tasks" element={<DailyTasks />} />
           <Route path="/about" element={<About />} />
           <Route path="/privacy" element={<Privacy />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
 

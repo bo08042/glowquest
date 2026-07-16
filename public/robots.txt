@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://bo08042.github.io/glowquest/sitemap.xml
