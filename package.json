@@ -1,8 +1,8 @@
 {
-  "name": "glowquest",
+  "name": "doubyeplan",
   "private": true,
   "version": "0.1.0",
-  "description": "痘掰計畫 GlowQuest — 痘痘衛教與好膚習慣養成網站",
+  "description": "痘掰計畫 DouBye — 痘痘衛教與好膚習慣養成網站",
   "type": "module",
   "scripts": {
     "dev": "vite",

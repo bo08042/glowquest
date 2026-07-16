@@ -1,4 +1,4 @@
-# 痘掰計畫 GlowQuest
+# 痘掰計畫 DouBye
 
 痘痘衛教知識、生活習慣自我檢視與每日好膚習慣挑戰的網站。
 
@@ -8,7 +8,7 @@
 
 ```bash
 npm install
-npm run dev      # 本機開發（http://localhost:5173/glowquest/）
+npm run dev      # 本機開發（http://localhost:5173/doubyeplan/）
 npm run build    # 建置到 dist/
 npm run preview  # 預覽建置結果
 ```

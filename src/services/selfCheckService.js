@@ -5,6 +5,7 @@
 // 儲存策略：只保存「最後一次完成的作答」。
 // 重新作答期間不動舊紀錄，直到使用者完成並送出才覆蓋。
 
+// key 沿用改名前的 glowquest 前綴：改 key 會讓既有使用者的紀錄消失
 const STORAGE_KEY = 'glowquest.selfCheck.v1'
 
 export function getLastResult() {

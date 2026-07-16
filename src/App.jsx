@@ -52,7 +52,7 @@ export default function App() {
             onClick={() => setMenuOpen(false)}
             className="whitespace-nowrap text-lg font-bold text-emerald-700"
           >
-            痘掰計畫 <span className="text-sm font-normal text-stone-400">GlowQuest</span>
+            痘掰計畫 <span className="text-sm font-normal text-stone-400">DouBye</span>
           </NavLink>
 
           {/* 桌面版導覽 */}
@@ -129,7 +129,7 @@ export default function App() {
               隱私權政策
             </NavLink>
           </div>
-          <p>© 2026 痘掰計畫 GlowQuest</p>
+          <p>© 2026 痘掰計畫 DouBye</p>
         </div>
       </footer>
     </div>

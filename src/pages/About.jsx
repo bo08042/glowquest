@@ -8,7 +8,7 @@ export default function About() {
       <section className="space-y-3 text-stone-700">
         <h2 className="text-lg font-semibold text-stone-900">關於痘掰計畫</h2>
         <p>
-          痘掰計畫（GlowQuest）是一個分享痘痘衛教知識與好膚習慣養成的網站。
+          痘掰計畫（DouBye）是一個分享痘痘衛教知識與好膚習慣養成的網站。
           我們相信理解自己的生活習慣，是照顧皮膚的第一步。
         </p>
       </section>

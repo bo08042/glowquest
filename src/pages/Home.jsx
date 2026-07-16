@@ -29,7 +29,7 @@ export default function Home() {
           跟痘痘說<span className="text-emerald-600">掰掰</span>
         </h1>
         <p className="mx-auto max-w-xl text-stone-600">
-          痘掰計畫 GlowQuest
+          痘掰計畫 DouBye
           陪你認識痘痘、檢視生活習慣，一天一個小任務，慢慢養成好膚質的日常。
         </p>
         <div className="flex justify-center gap-3 pt-2">

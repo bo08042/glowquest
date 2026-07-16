@@ -4,6 +4,7 @@
 // Phase 2 要接 Firebase/Supabase 做跨裝置同步時，
 // 只需替換這個檔案的內部實作，UI 完全不用動。
 
+// key 沿用改名前的 glowquest 前綴：改 key 會讓既有使用者的紀錄消失
 const STORAGE_KEY = 'glowquest.dailyTasks.v1'
 
 const emptyState = () => ({

@@ -2,9 +2,9 @@ import { getArticle } from './content/articles'
 
 // 網站部署位置。日後換自有網域時改這裡（以及 vite.config.js 的 base）。
 export const SITE = {
-  name: '痘掰計畫 GlowQuest',
+  name: '痘掰計畫 DouBye',
   origin: 'https://bo08042.github.io',
-  base: '/glowquest',
+  base: '/doubyeplan',
 }
 
 const DEFAULT_DESCRIPTION =
@@ -12,7 +12,7 @@ const DEFAULT_DESCRIPTION =
 
 const STATIC_META = {
   '/': {
-    title: '痘掰計畫 GlowQuest — 跟痘痘說掰掰的好膚習慣養成',
+    title: '痘掰計畫 DouBye — 跟痘痘說掰掰的好膚習慣養成',
     description: DEFAULT_DESCRIPTION,
   },
   '/knowledge': {
