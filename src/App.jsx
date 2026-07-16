@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Routes, Route, NavLink } from 'react-router-dom'
+import ScrollToTop from './components/ScrollToTop'
 import Home from './pages/Home'
 import Knowledge from './pages/Knowledge'
 import Article from './pages/Article'
@@ -40,6 +41,7 @@ export default function App() {
 
   return (
     <div className="flex min-h-screen flex-col bg-stone-50 text-stone-800">
+      <ScrollToTop />
       <header className="sticky top-0 z-10 border-b border-stone-200 bg-white/90 backdrop-blur">
         <div className="mx-auto flex max-w-4xl items-center justify-between px-4 py-3">
           <NavLink
