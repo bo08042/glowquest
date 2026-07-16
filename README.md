@@ -24,5 +24,3 @@ npm run preview  # 預覽建置結果
 
 Push 到 `main` 分支後，GitHub Actions 會自動建置並部署到 GitHub Pages。
 首次使用需到 repo 的 **Settings → Pages** 將 Source 設為 **GitHub Actions**。
-
-詳細規劃見 [docs/project-plan.md](docs/project-plan.md)。
