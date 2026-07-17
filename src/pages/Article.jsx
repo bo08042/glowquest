@@ -4,12 +4,20 @@ import remarkGfm from 'remark-gfm'
 import { getArticle } from '../content/articles'
 
 // Markdown 內的連結處理：
-// - './slug' 形式視為站內文章連結，轉成 hash 路由
+// - './slug' 形式視為站內文章連結
+// - '/path' 形式視為站內頁面連結（如 /self-check）
 // - 外部連結一律另開分頁
 function MarkdownLink({ href = '', children }) {
   if (href.startsWith('./')) {
     return (
       <Link to={`/knowledge/${href.slice(2)}`} className="text-emerald-700">
+        {children}
+      </Link>
+    )
+  }
+  if (href.startsWith('/')) {
+    return (
+      <Link to={href} className="text-emerald-700">
         {children}
       </Link>
     )
